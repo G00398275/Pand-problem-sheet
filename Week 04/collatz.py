@@ -5,13 +5,20 @@
 # If odd: multiply by three and add one
 # The program stops when the result of the succesive calculations becomes one
 # References: https://realpython.com/python-while-loop/
+# A Whirlwind Tour of Python by Jake VanderPlas, Released August 2016, Publisher(s): O'Reilly Media, Inc.
+
 # Author: Ross Downey
 
-x = int(input("Enter an integer please: "))
+x = int(input("Enter a positive integer please: "))
+
+while x <= 0:
+    print ("That is not a positive integer")
+    x = int(input ("Please enter a POSITIVE integer!: "))# Ensuring integer entered is positive
+
 numbers = []
 numbers.append(x)
 Result = x
-#Requesting integer, creating and appending list to be printed at end
+# Creating and appending list to be printed at end
 
 while Result != 1: # Initiating while loop, i.e. while x is not equal to 1 loop iterates
     if Result % 2 == 0:
