@@ -13,4 +13,4 @@ elif (today.strftime ("%A")) == "Saturday": # strftime %A gives day as a string
 
 else: 
     print ("Unfortunately it's a weekday, get out of bed!") 
-# If strftime not equal to 0 or 6, it's a weekday
+# If it's not Saturday / Sunday (using strftime functions), it's a weekday.
