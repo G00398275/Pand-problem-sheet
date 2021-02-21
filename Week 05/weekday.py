@@ -6,11 +6,10 @@
 import datetime # importing datetime function
 today = datetime.datetime.now() # determining what day it is
 
-if (today.strftime("%w")) == 0: # strftime %w gives the current day in a number format, 0 = Sunday
+if (today.strftime("%A")) == "Sunday": # strftime %A gives the current day as a string
      print ("It's the weekend!") 
-elif (today.strftime ("%A")) == "Saturday": # strftime %A gives day as a string
+elif (today.strftime ("%w")) == 6: # strftime %w gives current day in number format; 6 = Saturday
     print ("It's the weekend!") 
-
 else: 
     print ("Unfortunately it's a weekday, get out of bed!") 
-# If it's not Saturday / Sunday (using strftime functions), it's a weekday.
+# If strftime not equal to 6 or "Sunday", it's a weekday
