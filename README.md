@@ -21,3 +21,5 @@ Week 05: weekday.py
 Week 06: squareRoot.py
 
 Week 07: es.py
+
+Week 08: plottask.py
