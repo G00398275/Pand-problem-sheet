@@ -19,7 +19,7 @@ plt.plot (hpoints, marker = 'o', mec = 'r', mfc = 'r',
 ms = 7, ls = 'dashed') # formatting plot colours, appearance, point size, dashed lines etc.
 plt.title("Weekly Task 08: Plottask.py")
 plt.xlabel('x', color='k', fontsize=15)
-plt.ylabel('f(x) / g(x) / h(x)', color='k', fontsize=15) # fomratting title and axis labels
+plt.ylabel('f(x) / g(x) / h(x)', color='k', fontsize=15) # formatting title and axis labels
 plt.legend(['f(x)=x', 'g(x)=x^2', 'h(x)=x^3'], loc = 'upper center') # format legend labels and location
 plt.grid() # Think the grid makes it appear nicer
-plt.show() # show plot, chose not to save
+plt.savefig('threeFunctions.png') # Saving plot
